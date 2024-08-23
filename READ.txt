@@ -1,0 +1,11 @@
+Kreirati bazu sa tabelom Auto sa poljima id, marka, cena i ručno popuniti nekoliko Auta u bazu, 				(05 bodova)
+
+Kreirati DAO klasu sa metodama:				(10 bodova)	
+o	lista (String marka, int cena): vraća listu auta marke jeftinijih od prosleđene cene
+o	postoji (String marka): vraća da li postoji auto prosledjene marke				
+Kreirati index  koji samo ispisuje povratne poruke od  Kontrolera ako nešto nije dobro prosleđeno. 					(5 bodova)
+
+Kreirati  Kontroler koji u : 					(10 bodova)	
+o	doPost proverava dal postoji auto prosledjene marke i ako postoji salje listu auta jeftinijih od cene šalje na  viewJeftinih 			
+
+Kreirati  viewAuta  koji ispisuje listu auta (tabela). 	(10 bodova)
