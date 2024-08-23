@@ -1,0 +1,13 @@
+<?php
+require 'flight/Flight.php';
+require '../DAO.php';
+Flight::route('GET /auto/@marka/@cena', function($marka, $cena) {
+    $dao = new DAO();
+    echo json_encode($dao->lista($marka, $cena));
+});
+Flight::route('GET /auto/@marka', function($marka) {
+    $dao = new DAO();
+    echo json_encode($dao->postoji($marka));
+});
+Flight::start();
+?>
